@@ -1,0 +1,67 @@
+.navbar {
+  background-color: #004080;
+  color: #fff; /* White text color */
+padding: 10px 20px; /* Padding for some breathing room */
+display: flex; /* Flexbox for alignment */
+justify-content: space-between; /* Space between brand and menu toggle */
+align-items: center; /* Vertical center alignment */
+position: fixed; /* Fix navbar to the top */
+width: 100%; /* Full width */
+top: 0; /* Stick to the top */
+z-index: 1000; /* High z-index to stay on top of other content */
+box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+
+.nav-links a:hover {
+  background-color: #0066cc;
+  border-radius: 4px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 5px;
+  }
+
+  .app-content {
+    padding: 10px;
+  }
+}

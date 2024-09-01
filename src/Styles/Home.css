@@ -1,0 +1,25 @@
+/* src/styles/Home.css */
+.home {
+    text-align: center; /* Center-aligns text and inline elements */
+  }
+  
+  .home h1 {
+    font-size: 2em; /* Adjust the font size as needed */
+    margin-bottom: 0.5em;
+  }
+  
+  .home p {
+    font-size: 1.2em; /* Adjust the font size as needed */
+    margin-bottom: 2em;
+  }
+  
+  .home .slider {
+    display: flex;
+    justify-content: center; /* Center-aligns the slider horizontally */
+  }
+  
+  .home .slider img {
+    max-width: 50%; /* Ensures image does not exceed container width */
+    height: 10%; /* Maintains aspect ratio */
+  }
+  
